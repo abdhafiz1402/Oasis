@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfoloi_css.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">   
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio </a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+ <section id="Home">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Syed Abdul Hafiz</span></h1>
+                <p>Web Designer</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="About">
+    <div  id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Syed Abdul Hafiz, a current student at Easwari Engineering College. My educational foundation was established at Nag Vidhyashram Sr. Sec. School. I possess strong leadership qualities, excel in quick learning, and have a dedicated work ethic.
+
+                      My leadership skills are evident through active participation in various activities, showcasing my ability to guide and inspire others towards shared goals. I have a knack for grasping complex concepts swiftly, enabling effective adaptation to changing circumstances. Complementing this, I am known for my persistent and diligent approach to tasks.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span></li>
+                            <li><span>Web Development</li>
+                            <li><span>App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>Easwari Engineering College</li>
+                            <li><span>2021</span><br>Nag Vidhyashram Sr Sec School</li>
+                            <li><span>2019</span><br>Nag Vidhyashram Sr Sec School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Services">
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>Web developer skills are often applied to the non-design aspects of building websites – writing markup and coding. Web developers may also use content management systems (CMS) to make content changes easier for other developers or end-users who may lack technical skills.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design aims to create a positive user experience that encourages customers to stick with a brand or product. While a UX Designer decides how the user interface works, the UI designer decides how the user interface looks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Portfolio">
+    <div id="Portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Portfolio</h1>
+                        <div class="grid-container">
+                          <div class="grid-item"><h2>Landing Web Page </h2>The Sky Tours Website was conceived with a singular vision – to evoke a sense of awe and curiosity about the celestial realm. It represents a harmonious blend of aesthetic appeal and functional efficacy, ensuring an immersive experience that resonates with enthusiasts of all ages.</div>
+                          <div class="grid-item"><h2>Application Development</h2>The Indian Actors and Actresses Classification Application is more than a mere compilation; it is an homage to the artistic brilliance that defines Indian cinema. By offering a curated exploration into the lives and achievements of these icons, the application invites you to delve into the captivating world of Indian actors and actresses.</div>
+                    </div>
+</section>
+<section id="Contact">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> abdhafiz1402@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9698515444</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</section>
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+    </script>
+</body>
+<footer>
+    &copy
+    All the Rights are Reserved
+</footer>
+</html>
